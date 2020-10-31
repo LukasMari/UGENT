@@ -5,13 +5,21 @@
 
 int main() {
    int score, i;
-   
+   int x;
    /* aanwezigheidstabel declareren en initialiseren */
    bool aanwtabel[MAXSCORE + 1] = {false};
-
+   for(x = 0; x<= MAXSCORE; x++) {
+      printf("%d ", x);
+   }
    /* scores inlezen en aanduiden in de aanwezigheidstabel */
-   while (scanf("%d",&score)) 
-   	  aanwtabel[score] = true;
+   printf("Read in the next scores: ");
+   while (scanf("%d",&score)) {
+      aanwtabel[score] = true;
+      if(score == 0){ 
+         break;
+      }
+   }
+   	  
 
    /* overzicht van de scores weergeven */
    printf("Volgende scores komen niet voor:\n");

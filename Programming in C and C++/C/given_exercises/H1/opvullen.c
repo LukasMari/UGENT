@@ -9,7 +9,9 @@ int main() {
 		printf("Geef het %de getal: ", i+1);
 		scanf("%d", &getal);
 		index = i-1;
-		while (index>=0 && getal<t[index]) {
+		
+		// Sorting the array around
+		while (index>=0 && getal>t[index]) {
 			t[index+1] = t[index];
 			index--;
 		}
