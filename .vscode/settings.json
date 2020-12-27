@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "*.tcc": "c",
+        "chrono": "c",
+        "cmath": "c",
+        "complex": "c",
+        "numeric": "c",
+        "ratio": "c",
+        "cstdlib": "c"
+    }
+}
